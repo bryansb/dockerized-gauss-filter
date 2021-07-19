@@ -24,17 +24,16 @@ sigma = None
 pathName = None
 image_size = None
 
-# cuda.init()
-# ctx = make_default_context()
+def create_dir(path):
+    if not os.path.exists(path):
+        os.makedirs(path)
 
 def imread(path):
     image = np.array(Image.open(path), dtype=np.uint8)
-    # image = np.array(Image.open(path).convert('L'))
     return (image, image.shape)
 
 def save_image(image, name='gauss_image.png'):
     image = Image.fromarray(image)
-    # image = Image.fromarray(np.uint8(image), 'L')
     image.save(name)
 
 def split_channels(img):
@@ -118,7 +117,7 @@ def run_with_cuda(path, kernel_size_i, sigma_value, name='gauss_image_cuda.png')
 
     final_time = time_r + time_g + time_b
 
-    print('[INFO] Process')
+    print('[INFO] Process finished')
     
     image = merge_channels(image_r_out, image_g_out, image_b_out, image_size)
     file_name = get_image_name(path)
@@ -203,3 +202,5 @@ def run_with_cpu(path, kernel_size, sigma_value, name='gauss_image_cpu.png'):
     save_image(image_out, name=pathName)
     print(f'{image_size[0]},{image_size[1]},{final_time}')
     return image
+
+create_dir(os.path.join(settings.BASE_DIR, OUTPUT_IMAGE_RESULT))

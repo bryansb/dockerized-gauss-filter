@@ -15,9 +15,10 @@ function process(){
             } else {
                 document.getElementById("img-result-process").src = "/static/img/empty.png";
             }
-
             document.getElementById('process-btn').disabled = false;
         });
+    } else {
+        document.getElementById('process-btn').disabled = false;
     }
 }
 
@@ -61,3 +62,7 @@ function print(data) {
 
     document.getElementById("table-result-detail").innerHTML = html;
 }
+
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})

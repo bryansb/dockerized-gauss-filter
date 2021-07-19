@@ -8,3 +8,100 @@
     max-width: 400px;
     /* padding: 5px; */
 }
+
+body {
+    /* min-height: 110vh; */
+    /* background-color: #4ca1af;
+    background-image: linear-gradient(135deg, #4ca1af 0%, #c4e0e5 100%); */
+    /* background-color: #BB8FCE;
+    background-image: linear-gradient(135deg, #2E4053 0%, #5D6D7E 100%); */
+    background-color: #BB8FCE;
+    background-image: linear-gradient(135deg, #121212 0%, #121212 100%);
+    color:#fff;
+}
+
+.form-results{
+    background-color: #242424;
+    padding: 5px;
+    border-radius: 10px;
+    /* box-shadow: 0px 0px 3px #888888; */
+}
+
+.panel-dark {
+    background-color: #242424;
+    color: #fff;
+}
+
+.input-dark{
+    background-color: #525252;
+    color: #fff;
+}
+
+.input-dark:hover{
+    background-color: #676767;
+    color: #fff;
+}
+
+.input-dark:active{
+  border: 1px solid #995eff79;
+  transition: none;
+}
+
+.input-dark:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.input-dark:disabled:hover,
+.input-dark[disabled]:hover {
+  background-color: #242424;
+  color: #555;
+}
+
+/** INPUT TEXT **/
+.input-text-dark{
+    background-color: #525252;
+    border: 1px solid transparent;
+    color: #fff;
+}
+
+.input-text-dark:hover{
+    background-color: #676767;
+    color: #fff;
+}
+
+.input-text-dark:active{
+  border: 1px solid #995eff79;
+  transition: none;
+}
+
+.input-text-dark:focus {
+  outline: none;
+  box-shadow: none;
+  border: 1px solid #995eff79;
+}
+
+.form-control {
+    /* border: 1px; */
+    outline: none;
+    box-shadow: none;
+}
+
+/*************/
+
+table {
+    /* border:1px solid #373737; */
+    margin-top:20px;
+    color: #fff;
+}
+
+table thead th{
+    border:1px solid transparent !important;
+    background-color: #2C2C2C;
+    color: #fff;
+}
+
+table td, table th{
+    border-bottom:1px solid #373737;
+    color: #fff;
+}

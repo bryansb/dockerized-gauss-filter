@@ -12,8 +12,9 @@ RUN pip3 install pycuda==2020.1 \
         && pip3 install scipy   \
         && pip3 install django-cors-headers
 
-COPY [^.git]*  app/
+COPY . app/
 WORKDIR /app
+
 EXPOSE 8888
 
 ENV PYTHONUNBUFFERED=1
