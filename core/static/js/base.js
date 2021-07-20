@@ -34,7 +34,7 @@ function print(data) {
             </tr>
             <tr>
                 <th scope="row" class="text-right">Tiempo</th>
-                <td>${data['final_time']}</td>
+                <td>${Math.round((data['final_time'] + Number.EPSILON) * 100) / 100} segundos</td>
             </tr>
             <tr>
                 <th scope="row" class="text-right">Máscara</th>
