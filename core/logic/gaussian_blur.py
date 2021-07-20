@@ -131,6 +131,7 @@ def run_with_cuda(path, kernel_size_i, sigma_value, name='gauss_image_cuda.png')
     pathURL= os.path.join(URL_IMAGE_RESULT, file_name)
     return  {
                 "imgUrl": pathURL, 
+                "image_size": image_size,
                 "final_time": final_time,
                 "kernel": kernel_size, 
                 "sigma": sigma_value, 

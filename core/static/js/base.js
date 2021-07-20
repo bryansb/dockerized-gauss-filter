@@ -29,6 +29,10 @@ function print(data) {
         html = `
         <tbody>
             <tr>
+                <th scope="row" class="text-right">Dimensión (imagen)</th>
+                <td>${data['image_size']}</td>
+            </tr>
+            <tr>
                 <th scope="row" class="text-right">Tiempo</th>
                 <td>${data['final_time']}</td>
             </tr>

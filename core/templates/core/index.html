@@ -89,7 +89,7 @@
         </div>
 
         <div class="row justify-content-center mt-3 border border-dark rounded-3 p-2">
-            <div class="col-3 mx-auto">
+            <div class="col-3">
                 <label for="img-select">Imagen:</label>
                 <select class="form-select input-text-dark" aria-label="" id="img-select">
                     <option selected value="null">Seleccione una imagen</option>
@@ -101,10 +101,10 @@
                     <option value="{% static 'img/6.jpg'%}">Imagen 6</option>
                 </select>
             </div>
-            <div class="col-3 mx-auto">
+            <div class="col-3 ">
                 <label for="kernel-select">Máscara:</label>
                 <select class="form-select input-text-dark" aria-label="" id="kernel-select">
-                    <option value="null" selected>Seleccione una imagen</option>
+                    <option value="null" selected>Seleccione una máscara</option>
                     <option value="3">Kernel 3x3</option>
                     <option value="5">Kernel 5x5</option>
                     <option value="7">Kernel 7x7</option>
@@ -112,14 +112,18 @@
                     <option value="15">Kernel 15x15</option>
                 </select>
             </div>
-            <div class="col-3 mx-auto">
+            <div class="col-3">
                 <label for="sigma-value">Desviación Estándar</label>
                 <input type="number" class="form-control input-text-dark" value="1" id="sigma-value"/>
             </div>
-            <div class="col-2 mx-auto my-auto">
-                <button type="button" class="btn input-dark btn-lg" onclick="process();" id="process-btn">
-                    <i class="fas fa-microchip"></i> Procesar
-                </button>
+            <div class="col-2 my-auto">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <button type="button" class="btn input-dark btn-lg" onclick="process();" id="process-btn">
+                            <i class="fas fa-microchip"></i> Procesar
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
 
